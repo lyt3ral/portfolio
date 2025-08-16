@@ -111,7 +111,7 @@
 					<div class="relative pl-8">
 						<div
 							class="absolute -left-[7px] top-1 h-3 w-3 rounded-full bg-teal-500 border-2 border-zinc-900"
-						/>
+						></div>
 
 						<p class="text-sm text-zinc-500 mb-2">{job.duration}</p>
 						<h4 class="text-lg font-medium text-zinc-100">{job.role}</h4>
