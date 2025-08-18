@@ -29,7 +29,8 @@
 	const personalDetails = {
 		name: 'Sai Sabarish',
 		title: 'Software Engineer',
-		location: 'Chennai, India'
+		location: 'Chennai, India',
+		resumeUrl: 'https://drive.google.com/file/d/1kEj9tdzFtoo74CxP-u0NTh7G7sUkwppP/view?usp=sharing'
 	};
 
 	const about = `
@@ -99,6 +100,14 @@
 				<MapPin size={16} />
 				<span>{personalDetails.location}</span>
 			</div>
+			<a
+				href={personalDetails.resumeUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mt-4 inline-block bg-zinc-800 text-zinc-200 px-4 py-2 rounded-md hover:bg-teal-500 transition-colors"
+			>
+				Download Resume
+			</a>
 			<p class="max-w-2xl my-4 text-zinc-300 leading-relaxed text-justify hyphens-auto">
 				{about}
 			</p>
