@@ -20,7 +20,12 @@
 	>
 		Download Resume
 	</a>
-	<p class="max-w-2xl my-4 text-zinc-300 leading-relaxed">
-		{@html about}
-	</p>
+	<div class="max-w-2xl mt-4 flex flex-col gap-4">
+		<p class="text-lg text-zinc-300 leading-relaxed">
+			{about.description}
+		</p>
+		<p class="text-zinc-500 italic border-l-2 border-zinc-800 pl-4 py-1">
+			“{about.motto}”
+		</p>
+	</div>
 </header>

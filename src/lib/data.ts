@@ -23,7 +23,10 @@ export const personalDetails = {
 	resumeUrl: 'https://drive.google.com/file/d/1kEj9tdzFtoo74CxP-u0NTh7G7sUkwppP/view?usp=sharing'
 };
 
-export const about = `A Software Engineer with a passion for building elegant and efficient solutions. <br/> Stay hungry, stay foolish.`;
+export const about = {
+	description: 'A Software Engineer with a passion for building elegant and efficient solutions, focused on backend microservices and distributed systems.',
+	motto: 'Stay hungry, stay foolish.'
+};
 
 export const workExperience = [
 	{
