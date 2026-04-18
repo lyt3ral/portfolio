@@ -29,18 +29,24 @@
 	const personalDetails = {
 		name: 'Sai Sabarish',
 		title: 'Software Engineer',
-		location: 'Chennai, India',
+		location: 'Hyderabad, India',
 		resumeUrl: 'https://drive.google.com/file/d/1kEj9tdzFtoo74CxP-u0NTh7G7sUkwppP/view?usp=sharing'
 	};
 
-	const about = `
-    As a Software Engineer with a passion for building elegant and efficient solutions, 
-    I specialize in full-stack development. I have hands-on experience in leading feature development,
-    engineering scalable platforms, and deploying solutions using modern technologies like Next.js, Docker, and AWS.
-    My goal is to leverage my skills to create meaningful digital experiences.
-  `;
+	const about = `A Software Engineer with a passion for building elegant and efficient solutions. <br/> Stay hungry, stay foolish.`;
 
 	const workExperience = [
+		{
+			role: 'Senior Associate Software Engineer',
+			company: 'AT&T',
+			duration: 'September 2025 - Present',
+			description: [
+				'Developing backend microservices using Java (Spring Boot) and Python.',
+				'Orchestrating distributed workflows with Temporal for resilient state management.',
+				'Building FastMCP tools to integrate AI models with internal data via Model Context Protocol.'
+			],
+			skills: ['Java', 'Spring Boot', 'Python', 'Temporal', 'FastMCP']
+		},
 		{
 			role: 'Founding Software Engineer (Intern)',
 			company: 'BCloudOne Jewellery and VStyle Private Limited',
@@ -82,8 +88,19 @@
 	];
 
 	const skills = {
-		Languages: ['TypeScript', 'Python', 'C/C++', 'JavaScript', 'SQL', 'HTML/CSS'],
-		Frameworks: ['Next.js', 'React', 'React Native', 'Flask', 'Express.js', 'Django', 'FastAPI'],
+		Languages: ['Java', 'TypeScript', 'Python', 'C/C++', 'JavaScript', 'SQL', 'HTML/CSS'],
+		Frameworks: [
+			'Spring Boot',
+			'Temporal',
+			'FastMCP',
+			'Next.js',
+			'React',
+			'React Native',
+			'Flask',
+			'Express.js',
+			'Django',
+			'FastAPI'
+		],
 		'Databases & ORMs': ['PostgreSQL', 'MySQL', 'SQLite', 'tRPC', 'Prisma', 'GraphQL'],
 		'DevOps & Tools': ['Git', 'Docker', 'AWS', 'Expo', 'Arduino']
 	};
@@ -109,7 +126,7 @@
 				Download Resume
 			</a>
 			<p class="max-w-2xl my-4 text-zinc-300 leading-relaxed">
-				{about}
+				{@html about}
 			</p>
 		</header>
 
