@@ -1,11 +1,12 @@
 <script>
+	import { reveal } from '$lib/utils';
 	export let projects;
 
 	// Duplicate projects to ensure a seamless loop in the marquee
 	const displayProjects = [...projects, ...projects];
 </script>
 
-<section id="projects" class="flex flex-col gap-8">
+<section use:reveal id="projects" class="flex flex-col gap-8">
 	<h3 class="text-2xl font-semibold text-zinc-200">Projects</h3>
 	
 	<div class="marquee-container -mx-4">

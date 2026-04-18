@@ -3,6 +3,7 @@
 	import Dock from './Dock.svelte';
 	import DockIcon from './DockIcon.svelte';
 	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
+	import { magnetic } from '$lib/utils';
 
 	export let navs;
 </script>
@@ -16,8 +17,9 @@
 						<Tooltip.Root>
 							<Tooltip.Trigger>
 								<a
+									use:magnetic
 									href={item.href}
-									class="hover:bg-zinc-800 transition-all duration-200 rounded-full p-3 mx-0 block"
+									class="magnetic-link hover:bg-zinc-800 transition-all duration-200 rounded-full p-3 mx-0 block"
 								>
 									<svelte:component
 										this={item.icon}
@@ -39,10 +41,11 @@
 						<Tooltip.Root>
 							<Tooltip.Trigger>
 								<a
+									use:magnetic
 									href={item.href}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="hover:bg-zinc-800 transition-all duration-200 rounded-full p-0 block"
+									class="magnetic-link hover:bg-zinc-800 transition-all duration-200 rounded-full p-0 block"
 								>
 									<svelte:component
 										this={item.icon}
@@ -60,3 +63,13 @@
 		</div>
 	</div>
 </Tooltip.Provider>
+
+<style>
+	.magnetic-link {
+		transition: transform 0.1s ease-out;
+	}
+
+	.magnetic-link:hover {
+		filter: drop-shadow(0 0 12px rgba(45, 212, 191, 0.6));
+	}
+</style>

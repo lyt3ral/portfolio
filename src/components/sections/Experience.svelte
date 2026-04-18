@@ -1,8 +1,9 @@
 <script>
+	import { reveal } from '$lib/utils';
 	export let workExperience;
 </script>
 
-<section id="experience" class="flex flex-col gap-8">
+<section use:reveal id="experience" class="flex flex-col gap-8">
 	<h3 class="text-2xl font-semibold text-zinc-200">Work Experience</h3>
 	<div class="relative flex flex-col gap-12 border-l-2 border-zinc-800 ml-3">
 		{#each workExperience as job}

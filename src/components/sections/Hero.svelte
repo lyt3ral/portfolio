@@ -1,11 +1,12 @@
 <script>
 	import { MapPin } from '@lucide/svelte';
+	import { reveal } from '$lib/utils';
 
 	export let personalDetails;
 	export let about;
 </script>
 
-<header class="flex flex-col items-start gap-4">
+<header use:reveal class="flex flex-col items-start gap-4">
 	<h1 class="text-5xl font-bold text-zinc-100">{personalDetails.name}</h1>
 	<h2 class="text-2xl text-zinc-400 font-normal">{personalDetails.title}</h2>
 	<div class="flex items-center gap-2 text-zinc-500">
