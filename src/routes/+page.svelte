@@ -93,7 +93,7 @@
 
 <div class="max-w-3xl mx-auto min-h-screen font-sans px-4 py-16 sm:py-24 pb-[6.5rem]">
 	<main class="flex flex-col gap-16">
-		<header class="flex flex-col items-center gap-4 text-center">
+		<header class="flex flex-col items-start gap-4">
 			<h1 class="text-5xl font-bold text-zinc-100">{personalDetails.name}</h1>
 			<h2 class="text-2xl text-zinc-400 font-normal">{personalDetails.title}</h2>
 			<div class="flex items-center gap-2 text-zinc-500">
@@ -108,7 +108,7 @@
 			>
 				Download Resume
 			</a>
-			<p class="max-w-2xl my-4 text-zinc-300 leading-relaxed text-justify hyphens-auto">
+			<p class="max-w-2xl my-4 text-zinc-300 leading-relaxed">
 				{about}
 			</p>
 		</header>
