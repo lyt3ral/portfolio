@@ -62,6 +62,13 @@ export const workExperience = [
 
 export const projects = [
 	{
+		name: 'Job Scraper TS',
+		description:
+			'Automated job scraper for Workday, Greenhouse, and Lever platforms featuring AI-driven analysis and real-time Telegram notifications.',
+		tech: ['TypeScript', 'Node.js', 'OpenAI', 'Telegram API'],
+		link: 'https://github.com/lyt3ral/job-scraper-ts'
+	},
+	{
 		name: 'Seating Project',
 		description:
 			'A collaborative seat allocation system that automated assignments for over 5,000 students, eliminating errors and minimizing administrative tasks.',
